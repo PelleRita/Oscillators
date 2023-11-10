@@ -1,0 +1,9 @@
+Circuit: * C:\Users\DELL\OneDrive\Asztali gép\7. felev\Szakdolgozat\Rendszerezett kódok\All_codes\Ring_oscillator_RC_model\Ring_oscillator.asc
+
+Warning: Multiple definitions of model "p_50n" Type: BSIM4
+Warning: Multiple definitions of model "n_50n" Type: BSIM4
+Warning: Multiple definitions of model "p_1u" Type: Mos3
+Warning: Multiple definitions of model "n_1u" Type: Mos3
+WARNING: Node N006 is floating.
+
+Direct Newton iteration for .op point succeeded.

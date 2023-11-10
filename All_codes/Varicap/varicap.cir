@@ -1,0 +1,20 @@
+
+.model vdiode D(Ron=.1 Roff=1Meg Vfwd=.4)
+
+
+
+V1 1 0 pwl(0.0 0.0 10.0n 1.0 20n 1.0 30.0n -1.0)
+
+R1c 1 2 50.0
+
+*C20 2 0 Q=50p*x*x
+
+C20 2 0 Q=x*if(x<0,50p,150.0p/(x+2))
+D1 0 2 vdiode
+
+*Based on: https://ltwiki.org/files/LTspiceHelp.chm/html/C-device.htm
+
+.save all
+
+
+.TRAN  0.0 50.0n  UIC

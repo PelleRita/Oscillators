@@ -1,0 +1,9 @@
+*SPICE netlist one-way interconnected oscillators
+.subckt varicap in out
+.model vdiode D(Ron=.1 Roff=1Meg Vfwd=.4)
+
+R1c in 2 0.7
+C20 2 out Q=x*if(x<0,50p,150.0p/(x+2))
+D1 out 2 vdiode
+.ends
+
